@@ -27,46 +27,46 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-8 mt-5 d-flex boreder border-dark flex-column justify-content-evenly h-100">
-                    <form>
+                    <form name="addressBookForm" netlify data-netlify-recaptcha="true">
                         <div class="container ">
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <label for="firstName">First Name</label>
-                                    <input id="firstName" class="form-control" required type="text">
+                                    <input name="firstName" id="firstName" class="form-control" required type="text">
                                 </div>
                                 <div class="col-12  col-md-6 ">
                                     <label for="lastName">Last Name</label>
-                                    <input id="lastName" required class="form-control" type="text">
+                                    <input name="lastName" id="lastName" required class="form-control" type="text">
                                 </div>
 
 
                                 <div class="col-12  col-md-6">
                                     <label for="email">Email</label>
-                                    <input id="email" class="form-control" required type="email">
+                                    <input name="email" id="email" class="form-control" required type="email">
                                 </div>
                                 <div class="col-12  col-md-6">
                                     <label for="phone">Phone</label>
-                                    <input id="phone" required class="form-control" type="text">
+                                    <input name="phone" id="phone" required class="form-control" type="text">
                                 </div>
 
 
                                 <div class="col-12 ">
                                     <label for="address">Address</label>
-                                    <input id="address" class="form-control" required type="text">
+                                    <input name="address" id="address" class="form-control" required type="text">
                                 </div>
                                 <div class="col-12 ">
                                     <label for="address2">Address 2</label>
-                                    <input id="address2" placeholder="Apartment, suite, room number"
+                                    <input name="address2" id="address2" placeholder="Apartment, suite, room number"
                                         class="form-control" type="text">
                                 </div>
 
                                 <div class=" col-12 col-md-7 ">
                                     <label for="city">City</label>
-                                    <input id="city" class="form-control" required type="text">
+                                    <input name="city" id="city" class="form-control" required type="text">
                                 </div>
                                 <div class="col-12 col-md-3 ">
                                     <label for="state">State</label>
-                                    <select class="form-select" required aria-label="Default select example">
+                                    <select name="state" class="form-select" required aria-label="Default select example">
                                         <option selected>Choose...</option>
                                         <option value="AL">Alabama</option>
                                         <option value="AK">Alaska</option>
@@ -123,12 +123,15 @@
                                 </div>
                                 <div class=" col-12 col-md-2 ">
                                     <label for="zipcode">Zip</label>
-                                    <input id="zipcode" required class="form-control" type="number">
+                                    <input name="zipcode" id="zipcode" required class="form-control" type="number">
                                 </div>
                                 <div class="col-12">
                                     <input class="form-check-input" type="checkbox" value="" id="family">
-                                    <label class="form-check-label" for="family">Family</label>
+                                    <label name="family" class="form-check-label" for="family">Family</label>
                                 </div>
+                                  <div class="col-12 col-md-4">
+                                      <div data-netlify-recaptcha="true"></div>
+                                  </div>
                                 <div class=" col-12 d-flex justify-content-end">
                                     <button class="btn btn-secondary mb-5 ml-auto p-2 " type="submit">Save</button>
                                 </div>
